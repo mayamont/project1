@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <title> WDDM 113 and 114</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="item1">
+              <img src="./images/Government-of-Canada-Logo-1980.png" title="canada logo" width="200px" alt="canadian government logo">
+              <h1 class ="title"> The Canada Pension Plan (CPP)</h1>
+            </div>
+            <div class="item3"><img class ="img2" src="./images/3103.jpg" title="retirement picture" width="790px" alt="happy retirement"></div>  
+            <div class="item4"><button class="button" onclick="Aboutit()">About the plan</button>
+                <button class="button" onclick="ClientInfo()">Your information</button>
+                <button class="button" onclick="Result()">Your result</button>
+                
+                
+                <!-- Texts that will be changed according to the button clicked <!-->  
+                <h1 id="texth1" class ="important" >About the plan</h1>
+                <p  id="textpplan" class = "text">The Canada Pension Plan (CPP) retirement pension is a monthly, taxable benefit that replaces part of your income when you retire. If you qualify, you’ll receive the CPP retirement pension for the rest of your life.<br> To qualify you must:</p>
+                <ul class="list" id = "requirements">
+                    <li>be at least 60 years old</li>
+                    <li>have made at least one valid contribution to the CPP</li>
+                </ul>
+                <p id="textp2plan" class="text"> Valid contributions can be either from work you did in Canada, or as the result of receiving credits from a former spouse or former common-law partner at the end of the relationship.</p>
+                <p id="textp3plan" class="legend">Text from: <a href="https://www.canada.ca/en/services/benefits/publicpensions/cpp.html">Canadian government website</a></p>
+                <p  id="textpresult" class = "text"  hidden="hidden">result</p>
+                <!-- Table with education history <!-->  
+                <table id="infotable" hidden = "hidden" class = "table">
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                      </tr>
+                      <tr>
+                        <td id = "firstname"></td>
+                        <td id = "lastname"></td>
+                        <td id = "age"></td>
+                  </table>
+                   
+            </div>
+            <div class="item5"><button class="button" onclick="location.href='https://www.canada.ca/en/services/benefits/publicpensions/cpp.html'">For more information visit the government website</button><br></div>
+        </div>
+        <script src="jquery.js"></script> 
+        <script src="MainScript.js"></script> 
+    </body>
+ 
+</html>
