@@ -1,26 +1,38 @@
 <!DOCTYPE html>
-<html leng="en">
-    <head>
-        <title> WDDM 113 and 114</title>
-    
-        <link rel="stylesheet" href="teste.css">
-    </head>
-    <body>
-        <div class="grid-container">
-            <div class="item1 theme">
-                <div class="center">
-                    <h1 class="large animate-bottom">The Canada Pension Plan</h1>
-                </div>
-            </div>
-            <div class="item3"><img class ="img2" src="./images/3103.jpg" title="retirement picture" width="790px" alt="happy retirement"></div>  
-            <div class="item4"><button class="button" onclick="Aboutit()">About the plan</button>
-                <button class="button" onclick="ClientInfo()">Today's qualification</button>
-                <button class="button" onclick="Result()">Summary</button>
-              
-                
-                <!-- Texts that will be changed according to the button clicked <!-->  
-                <h1 id="texth1" class ="important" >About the plan</h1>
-                <p  id="textpplan" class = "text">The Canada Pension Plan (CPP) retirement pension is a monthly, taxable benefit that replaces part of your income when you retire. If you qualify, you’ll receive the CPP retirement pension for the rest of your life.<br> To qualify you must:</p>
+<html lang="en">
+  <head>
+    <title>WDDM 113 and 114</title>
+    <link rel="stylesheet" href="teste.css">
+    <style>
+      .button:hover {
+        background-color: #ffcc00;
+        color: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item1 theme" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+        <div class="center">
+          <h1 class="large animate-bottom">The Canada Pension Plan</h1>
+        </div>
+      </div>
+      <div class="item3" onmouseover="handleMouseOver(this)" onmouseout="handleMouseOut(this)">
+        <img class="img2" src="./images/3103.jpg" title="retirement picture" width="790px" alt="happy retirement">
+      </div>
+      <div class="item4">
+        <button class="button" onclick="Aboutit()" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">
+          About the plan
+        </button>
+        <button class="button" onclick="ClientInfo()" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">
+          Today's qualification
+        </button>
+        <button class="button" onclick="Result()" onmousedown="handleMouseDown(this)" onmouseup="handleMouseUp(this)">
+          Summary
+        </button>
+        <!-- Texts that will be changed according to the button clicked -->
+        <h1 id="texth1" class="important">About the plan</h1>
+        <p id="textpplan" class="text">The Canada Pension Plan (CPP) retirement pension is a monthly, taxable benefit that replaces part of your income when you retire. If you qualify, you’ll receive the CPP retirement pension for the rest of your life.<br> To qualify you must:</p>
                 <ul class="list" id = "requirements">
                     <li>be at least 60 years old</li>
                     <li>have made at least one valid contribution to the CPP</li>
